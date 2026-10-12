@@ -1,0 +1,233 @@
+/* press-start-2p-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Press Start 2P';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/press-start-2p-v16-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: 'Press Start 2P';
+    font-style: normal;
+}
+
+body {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid blue; */
+    overflow: hidden;
+
+    background-image: url(/space_bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: relative;
+}
+
+
+#heroBox {
+    width: 400px;
+    height: 230px;
+    background-image: url(/BlackPearl_bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 5px;
+
+    border-radius: 0 0 20px 0;
+}
+
+table,
+th,
+td {
+    width: fit-content;
+    border: none;
+    color: yellow;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    font-weight: bold;
+
+    font-size: 1.rem;
+    line-height: 2;
+}
+
+td {
+    /* background-color: red; */
+    width: fit-content;
+}
+
+#btnBox {
+    margin: 10px;
+    width: 220px;
+}
+
+input {
+    width: 100px;
+    height: 40px;
+    font-size: 0.5rem;
+    padding: 3px;
+    background-color: black;
+    border: 3px solid grey;
+    border-radius: 5px;
+    color: yellow;
+
+    transition: all 500ms ease;
+}
+
+input::placeholder {
+    color: yellow;
+    font-size: 0.6rem;
+}
+
+input:hover {
+    border: 3px solid yellow;
+}
+
+input:focus {
+    border: 3px solid yellow;
+}
+
+input:focus::placeholder {
+    visibility: hidden;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+button {
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    border: 3px solid grey;
+    background-color: black;
+    color: yellow;
+    border: 3px solid yellow;
+
+    transition: all 500ms ease;
+
+    cursor: pointer;
+}
+
+button:hover {
+    font-weight: bold;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(2px);
+}
+
+#useBtn {
+    width: 200px;
+    background-color: #2CFF05;
+    color: black;
+
+    border: 4px solid #000000;
+    border-radius: 5px;
+    border-style: outset;
+    border-color: grey;
+    margin-left: 4%;
+
+    position: relative;
+    outline: none;
+
+    transition: all 0.05s ease;
+
+    box-shadow:
+        inset -2px -2px 0px #3f7000,
+        inset 2px 2px 0px #8ee600,
+        2px 2px 0px #1a2211;
+    image-rendering: pixelated;
+}
+
+#useBtn:hover {
+    background-color: #73c700
+}
+
+#useBtn:active {
+    transform: translate(0.5px, 0.5px);
+    box-shadow:
+        inset -1px -1px 0px #3f7000,
+        inset 1px 1px 0px #8ee600,
+        1px 1px 0px #1a2211;
+}
+
+#errorBox {
+    /* border: 2px solid blue; */
+    position: absolute;
+    bottom: 190px;
+    right: 100px;
+    font-size: 1.8rem;
+    color: rgb(231, 21, 21);
+
+    text-shadow:
+        1px 0px 0 black,
+        -1px 0px 0 black,
+        0px 1px 0 black,
+        0px -1px 0 black,
+        1px 1px 0 black,
+        -1px 1px 0 black,
+        -1px -1px 0 black;
+}
+
+#legendBox {
+    margin: 10px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    line-height: 2;
+    text-align: right;
+    color: yellow;
+}
+
+#gameOver {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#gameOver h1 {
+    color: red;
+}
+
+#gameOver p {
+    line-height: 1.5;
+}
+
+.ship-name {
+    font-weight: bold;
+    /* Hier kannst du dem Namen auch eine andere Farbe geben, falls gewünscht: */
+    color: black;
+    -webkit-text-stroke: 0.1px yellow; 
+    font-size: 1.4rem;
+}
+
+#reloadBtn {
+    width: 200px;
+}
+
+
+
